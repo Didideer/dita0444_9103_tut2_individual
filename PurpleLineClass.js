@@ -21,4 +21,8 @@ class PurpleLine {
         this.drawW = this.w * insideCanvasWidth;
         this.drawH = this.h * insideCanvasHeight;
     }
+    // Method to check if a point (mouseX, mouseY) is inside the purple line rectangle
+    isClicked(mouseX, mouseY) {
+        return mouseX > this.drawX && mouseX < this.drawX + this.drawW && mouseY > this.drawY && mouseY < this.drawY + this.drawH;
+    }
 }
