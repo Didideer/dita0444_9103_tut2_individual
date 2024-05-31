@@ -84,3 +84,19 @@ class MovingCircle {
 
 
 }
+
+// Array to store moving circles
+let movingCircles = [];
+
+// Handle mouse clicks
+function mousePressed() {
+    // Check if any purple line is clicked
+    for (let line of purpleLinesArray) {
+        if (line.isClicked(mouseX, mouseY)) {
+            let colors = [limeGreen, roseRed, milkYellow, linePurple, shallowPurple]; // Array of possible colors for the circles
+            let color = random(colors); // Choose a random color for the new circle
+            let circle = new MovingCircle(line, color); // Create a new MovingCircle
+            movingCircles.push(circle); // Add the new circle to the movingCircles array
+        }
+    }
+}
