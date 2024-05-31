@@ -113,5 +113,14 @@ function draw() {
     drawFeaturedRectangles(); // Draw the featured rectangles
     drawCentredCircle(); // Draw the centred circles
 
+    // Draw and move circles
+    for (let circle of movingCircles) {
+        circle.move(); // Move the circle along its path
+        circle.display(); // Display the circle
+    }
+
+    drawShadow(); // Draw the shadow
+    drawLightShadow(); // Draw the light shadow
+
 
 }
