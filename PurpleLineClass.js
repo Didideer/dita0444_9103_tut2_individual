@@ -100,3 +100,18 @@ function mousePressed() {
         }
     }
 }
+
+
+// Update draw function
+function draw() {
+    background(255); // Clear the canvas
+    drawInsideCanvas(); // Draw the inside canvas
+    drawFrame(); // Draw the frame
+
+    drawPurpleLines(); // Draw the purple lines
+    drawSmallRectangles(); // Draw the small rectangles
+    drawFeaturedRectangles(); // Draw the featured rectangles
+    drawCentredCircle(); // Draw the centred circles
+
+
+}
