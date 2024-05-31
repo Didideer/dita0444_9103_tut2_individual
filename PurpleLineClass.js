@@ -75,7 +75,11 @@ class MovingCircle {
     }
 
 
-
+    // Method to display the circle
+    display() {
+        fill(this.color); // Set the fill color to the circle's color
+        ellipse(this.x, this.y, this.radius * 2); // Draw the circle
+    }
 
 
 
