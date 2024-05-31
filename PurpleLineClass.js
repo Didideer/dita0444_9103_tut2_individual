@@ -42,3 +42,21 @@ class MovingCircle {
         };
     }
 }
+
+
+
+// Method to move the circle along the purple line
+move(); {
+    // Move along the x-axis
+    if (this.direction.x > 0) {
+        this.x += this.speed;
+        if (this.x > this.purpleLine.drawX + this.purpleLine.drawW) {
+            this.x = this.purpleLine.drawX;
+        }
+    } else {
+        this.x -= this.speed;
+        if (this.x < this.purpleLine.drawX) {
+            this.x = this.purpleLine.drawX + this.purpleLine.drawW;
+        };
+    }
+}
