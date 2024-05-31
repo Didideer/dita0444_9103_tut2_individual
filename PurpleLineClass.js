@@ -58,5 +58,25 @@ class MovingCircle {
                 this.x = this.purpleLine.drawX + this.purpleLine.drawW;
             }
         }
+
+
+        // Move along the y-axis
+        if (this.direction.y > 0) {
+            this.y += this.speed;
+            if (this.y > this.purpleLine.drawY + this.purpleLine.drawH) {
+                this.y = this.purpleLine.drawY;
+            }
+        } else {
+            this.y -= this.speed;
+            if (this.y < this.purpleLine.drawY) {
+                this.y = this.purpleLine.drawY + this.purpleLine.drawH;
+            }
+        }
     }
+
+
+
+
+
+
 }
